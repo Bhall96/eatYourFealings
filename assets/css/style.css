@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 navbar{
     max-width:fit-content;
 }
@@ -31,6 +30,9 @@ main {
 }
 
 .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     justify-items: center;
     justify-content:center;
     align-items:center;
@@ -78,4 +80,6 @@ main {
     min-width: 5vmax;
     min-height: 5vmax;
 }
->>>>>>> Stashed changes
+
+  
+

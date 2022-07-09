@@ -1,4 +1,8 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-  </div>
-</nav>
+    // mobile menu
+    const burgerIcon = document.querySelector('#burger');
+    const navbarMenu = document.querySelector('#nav-links');
+    
+    burgerIcon.addEventListener('click' , () => {
+        navbarMenu.classList.toggle('is-active');
+    })
+    
