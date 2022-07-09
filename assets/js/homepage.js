@@ -16,7 +16,7 @@ const happyEl = document.querySelector('#happy'),
     function handdleClickHappy(event) {
         event.preventDefault();
 
-        var happy = [1, 2, 3, 4, 5];
+        var happy = [52768, 52893, 53049];
 
         index = Math.floor(Math.random() * happy.length);
 
@@ -28,7 +28,7 @@ const happyEl = document.querySelector('#happy'),
     function handdleClickSad(event) {
         event.preventDefault();
 
-        var sad = [1, 2, 3, 4, 5];
+        var sad = [52768, 52893, 53049];
 
         index = Math.floor(Math.random() * sad.length);
 
@@ -52,7 +52,7 @@ const happyEl = document.querySelector('#happy'),
     function handdleClickProud(event) {
         event.preventDefault();
 
-        var proud = [1, 2, 3, 4, 5];
+        var proud = [52768, 52893, 53049];
 
         index = Math.floor(Math.random() * proud.length);
 
@@ -64,7 +64,7 @@ const happyEl = document.querySelector('#happy'),
     function handdleClickBored(event) {
         event.preventDefault();
 
-        var bored = [1, 2, 3, 4, 5];
+        var bored = [52768, 52893, 53049];
 
         index = Math.floor(Math.random() * bored.length);
 
@@ -76,7 +76,7 @@ const happyEl = document.querySelector('#happy'),
     function handdleClickHungover(event) {
         event.preventDefault();
 
-        var hungover = [1, 2, 3, 4, 5];
+        var hungover = [52768, 52893, 53049];
 
         index = Math.floor(Math.random() * hungover.length);
 
