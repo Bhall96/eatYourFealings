@@ -58,7 +58,7 @@ main {
     text-justify:center;
     padding: 3px;
     margin: auto;
-    max-width: 33%;
+    min-width: 33%;
 }
 
 .option:hover {
@@ -72,14 +72,10 @@ main {
     border: solid;
     border-color:yellow;
     border-radius: 10px;
-    max-width: 33%;
+    min-width: 33%;
     border-width: 3px;
 }
 
-.burgerGuy {
-    min-width: 5vmax;
-    min-height: 5vmax;
-}
 
   
 
