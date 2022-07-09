@@ -1,9 +1,85 @@
+
+navbar{
+    max-width:fit-content;
+}
+
+body{
+    justify-items: center;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    text-align:center;
+    text-justify:center;
+    background-color:rgb(255,17,0);
+    max-width: 99%;
+}
+
+main {
+    display: flex;
+    justify-items: center;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    text-align:center;
+    text-justify:center;
+    background-color: rgb(255, 17, 0);
+    justify-content: center;
+    max-width: fit-content;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-  }
+    justify-items: center;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    text-align:center;
+    text-justify:center;
+    min-width: 100%;
+    background-color:rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    border:solid;
+    align-content: center;
+    min-height: 50vh;
+}
+
+.option {
+
+    justify-items: center;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    text-align:center;
+    text-justify:center;
+    padding: 3px;
+    margin: auto;
+    max-width: 33%;
+}
+
+.option:hover {
+    justify-items: center;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    text-align:center;
+    text-justify:center;
+    opacity: 50%;
+    border: solid;
+    border-color:yellow;
+    border-radius: 10px;
+    max-width: 33%;
+    border-width: 3px;
+}
+
+.burgerGuy {
+    min-width: 5vmax;
+    min-height: 5vmax;
+}
+
   
-  .grid img {
-    width: 100%;
-  }
+
