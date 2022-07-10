@@ -1,6 +1,12 @@
 
-navbar{
-    max-width:fit-content;
+.navbar{
+    /* max-width:fit-content; */
+
+} 
+
+html{
+    background-color:rgb(255,17,0);
+    min-width: 300px;
 }
 
 body{
@@ -11,22 +17,29 @@ body{
     text-align:center;
     text-justify:center;
     background-color:rgb(255,17,0);
-    max-width: 99%;
+    width: 100vw;
 }
 
 main {
+    margin: 5rem;
     display: flex;
     justify-items: center;
     justify-content:center;
     align-items:center;
     align-content:center;
-    text-align:center;
+    text-align: center;
     text-justify:center;
     background-color: rgb(255, 17, 0);
     justify-content: center;
     /*max-width: fit-content;*/
-    min-height: 100vh;
-    min-width: 100vw;
+    /* min-height: 100vh;
+    min-width: 100vw; */
+}
+.label-click {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    padding-top: 5rem;
 }
 
 .grid {
@@ -43,7 +56,8 @@ main {
     background-color:rgb(255, 255, 255);
     padding: 5px;
     border-radius: 10px;
-    border:solid;
+    border: none;
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.189);
     align-content: center;
     min-height: 50vh;
 }
@@ -78,8 +92,10 @@ main {
 
 .footer{
     background-color: #ffe08a;
+    width: 100vw;
 
 }
+
 
 
   
