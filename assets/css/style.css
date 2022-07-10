@@ -24,9 +24,9 @@ main {
     text-justify:center;
     background-color: rgb(255, 17, 0);
     justify-content: center;
-    max-width: fit-content;
+    /*max-width: fit-content;*/
     min-height: 100vh;
-    min-width: 100%;
+    min-width: 100vw;
 }
 
 .grid {
@@ -74,6 +74,11 @@ main {
     border-radius: 10px;
     min-width: 33%;
     border-width: 3px;
+}
+
+.footer{
+    background-color: #ffe08a;
+
 }
 
 
