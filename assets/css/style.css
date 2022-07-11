@@ -3,34 +3,47 @@
     /* max-width:fit-content; */
 
 } 
+.navbar-item{
+    font-size: calc(1rem + .25vw);
+}
 
 html{
     background-color:rgb(255,17,0);
     min-width: 300px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+html::-webkit-scrollbar {
+    display: none;
+  }
 
 body{
+    overflow: hidden;
     justify-items: center;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-    text-align:center;
-    text-justify:center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
     background-color:rgb(255,17,0);
     width: 100vw;
+
 }
 
-main {
-    margin: 5rem;
+main {    
+    margin: 0 10vw;
+
     display: flex;
     justify-items: center;
-    justify-content:center;
+    justify-content: center;
     align-items:center;
     align-content:center;
     text-align: center;
     text-justify:center;
     background-color: rgb(255, 17, 0);
     justify-content: center;
+
     /*max-width: fit-content;*/
     /* min-height: 100vh;
     min-width: 100vw; */
@@ -39,10 +52,20 @@ main {
     font-size: x-large;
     font-weight: bold;
     color: white;
-    padding-top: 5rem;
+    margin: 3rem 5rem;
 }
 
+.label-sub {
+    font-size: medium;
+    font-weight: light;
+    color: white;
+    margin: 3rem 5rem;
+}
+
+
 .grid {
+
+    max-width: 50vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -51,7 +74,6 @@ main {
     align-items:center;
     align-content:center;
     text-align:center;
-    text-justify:center;
     min-width: 100%;
     background-color:rgb(255, 255, 255);
     padding: 5px;
@@ -59,7 +81,7 @@ main {
     border: none;
     box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.189);
     align-content: center;
-    min-height: 50vh;
+    
 }
 
 .option {
@@ -91,12 +113,8 @@ main {
 }
 
 .footer{
+    margin-top: 5rem;
     background-color: #ffe08a;
     width: 100vw;
 
 }
-
-
-
-  
-
