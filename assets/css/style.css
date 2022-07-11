@@ -2,9 +2,16 @@
 .navbar{
     /* max-width:fit-content; */
 
+
 } 
 .navbar-item{
-    font-size: calc(1rem + .25vw);
+    font-size: .7em;
+    letter-spacing: .05rem;
+    font-weight: bolder;
+}
+.navbar-logo{
+    align-content: center;
+    min-width: 10px;
 }
 
 html{
@@ -19,6 +26,7 @@ html::-webkit-scrollbar {
   }
 
 body{
+    padding: 0px;
     overflow: hidden;
     justify-items: center;
     justify-content: center;
@@ -48,6 +56,17 @@ main {
     /* min-height: 100vh;
     min-width: 100vw; */
 }
+
+.btn-joke {
+    font-size: large;
+    letter-spacing: 2px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 2.5rem;
+    font-weight: bolder;
+    background-color: #ffe08a;
+}
+
 .label-click {
     font-size: x-large;
     font-weight: bold;
@@ -60,6 +79,13 @@ main {
     font-weight: light;
     color: white;
     margin: 3rem 5rem;
+}
+
+.recipe-card {
+    padding: 25px;
+    margin: 5vw;
+    background-color: white;
+    border-radius: 50px;
 }
 
 
