@@ -1,94 +1,74 @@
-// mobile menu
+//Global variables
+const happyEl = document.querySelector('#happy');
+const sadEl = document.querySelector('#sad');
+const angryEl = document.querySelector('#angry');
+const proudEl = document.querySelector('#proud');
+const boredEl = document.querySelector('#bored');
+const hungoverEl = document.querySelector('#hungover');
 const burgerIcon = document.querySelector('#burger');
 const navbarMenu = document.querySelector('#nav-links');
+
+//Funtion that runs when an emotion is click
+function whenClicked(event) {
+    event.preventDefault();
+   
+    //assigning an event target to a variable
+    var id = event.target.id
     
+    //conditional state for what emotion is clicked 
+    if(id === 'happy') {
+        var happy = [52768, 52893, 53049];
+      
+        index = Math.floor(Math.random() * happy.length);
+      
+        var queryString = './index2.html?q=' + happy[index];
+      
+    } else if(id === 'sad') {
+        var sad = [52761, 52891, 53041];
+      
+        index = Math.floor(Math.random() * sad.length);
+      
+        var queryString = './index2.html?q=' + sad[index];
+      
+    } else if(id === 'angry') {
+        var angry = [1, 2, 3, 4, 5];
+      
+        index = Math.floor(Math.random() * angry.length);
+      
+        var queryString = './index2.html?q=' + angry[index];
+      
+    } else if(id === 'proud') {
+        var proud = [52762, 52892, 53042];
+      
+        index = Math.floor(Math.random() * proud.length);
+      
+        var queryString = './index2.html?q=' + proud[index];
+      
+    } else if(id === 'bored') {
+        var bored = [52764, 52894, 53044];
+      
+        index = Math.floor(Math.random() * bored.length);
+      
+        var queryString = './index2.html?q=' + bored[index];
+      
+    } else if(id === 'hungover') {
+        var hungover = [52769];
+      
+        index = Math.floor(Math.random() * hungover.length);
+      
+        var queryString = './index2.html?q=' + hungover[index];
+
+    } else {
+        return;
+    };
+    //when click you are taken to the location of the querystring    
+    location.assign(queryString);
+};
+
+//event listener that our funtion 
+this.addEventListener('click', whenClicked);
+
+//nav bar drop down menu for mobile 
 burgerIcon.addEventListener('click' , () => {
     navbarMenu.classList.toggle('is-active');
 })
-
-const happyEl = document.querySelector('#happy'),
-    sadEl = document.querySelector('#sad'),
-    angryEl = document.querySelector('#angry'),
-    proudEl = document.querySelector('#proud'),
-    boredEl = document.querySelector('#bored'),
-    hungoverEl = document.querySelector('#hungover');
-
-    function handdleClickHappy(event) {
-        event.preventDefault();
-
-        var happy = [52768, 52893, 53049];
-
-        index = Math.floor(Math.random() * happy.length);
-
-        var queryString = './index2.html?q=' + happy[index];
-
-        location.assign(queryString);
-    }
-
-    function handdleClickSad(event) {
-        event.preventDefault();
-
-        var sad = [52768, 52893, 53049];
-
-        index = Math.floor(Math.random() * sad.length);
-
-        var queryString = './index2.html?q=' + sad[index];
-
-        location.assign(queryString);
-    }
-
-    function handdleClickAngry(event) {
-        event.preventDefault();
-
-        var angry = [1, 2, 3, 4, 5];
-
-        index = Math.floor(Math.random() * angry.length);
-
-        var queryString = './index2.html?q=' + angry[index];
-
-        location.assign(queryString);
-    }
-
-    function handdleClickProud(event) {
-        event.preventDefault();
-
-        var proud = [52768, 52893, 53049];
-
-        index = Math.floor(Math.random() * proud.length);
-
-        var queryString = './index2.html?q=' + proud[index];
-
-        location.assign(queryString);
-    }
-
-    function handdleClickBored(event) {
-        event.preventDefault();
-
-        var bored = [52768, 52893, 53049];
-
-        index = Math.floor(Math.random() * bored.length);
-
-        var queryString = './index2.html?q=' + bored[index];
-
-        location.assign(queryString);
-    }
-
-    function handdleClickHungover(event) {
-        event.preventDefault();
-
-        var hungover = [52768, 52893, 53049];
-
-        index = Math.floor(Math.random() * hungover.length);
-
-        var queryString = './index2.html?q=' + hungover[index];
-
-        location.assign(queryString);
-    }
-
-
-    happyEl.addEventListener('click', handdleClickHappy);
-    sadEl.addEventListener('click', handdleClickSad);
-    angryEl.addEventListener('click', handdleClickAngry);
-    proudEl.addEventListener('click', handdleClickProud);
-    boredEl.addEventListener('click', handdleClickBored);
-    hungoverEl.addEventListener('click', handdleClickHungover);
