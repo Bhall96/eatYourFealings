@@ -7,6 +7,9 @@
     <title>Eat_Your_Feelings</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">    
 
 </head>
 <body>
@@ -18,11 +21,9 @@
                 <div class="navbar-brand" id="logo-box">
                     <a class="navbar-item">
                         <figure class="image is-64x64">
-                        <a class ="navbar-item" href="">
-    <img  src="assets\Images\header image_face eating.png" alt="Guy eating Burger Image"/>
+                         <img  src="assets\Images\header image_face eating.png" alt="Guy eating Burger Image"/>
                         </figure>
-                        EAT YOUR FEELINGS
-                    </a>
+                        EAT YOUR FEELINGS</a>
                         </a>
                     <a class="navbar-burger burger-spacing " id="burger">
                         <span></span>
@@ -33,17 +34,18 @@
             </h1>
             <div class="navbar-menu" id="nav-links">
                 <div class="navbar-end is-size-5">
-                    <a class="navbar-item" href="#Home">Home</a>
-                    <a class="navbar-item" href="#About Us">About Us</a>
-                    <a class="navbar-item" href="#Contact">Contact</a>
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href="#About-Us">About Us</a>
+                    <a class="navbar-item" href="#Contact-Us">Contact</a>
                 </div>
             </div>
         </nav>
 
     </header>
     <div class="label-click columns content has-text-centered">
-        <div class="column is-full"><p>Click an emote to generate a dish! 🍝</p></div>
+        <div class="column is-full"><h2>Click an emote to generate a dish! 🍝</h3></div>
       </div>
+
     <main>
         <div class="grid">
             <img id= "happy" class="option" value="happy" src="./assets/Images/happy.png">
@@ -55,86 +57,86 @@
         </div>
     </main>
 
-    <div class=" columns content has-text-centered">
-        <div class="column is-full label-click"><p>ABOUT THE TEAM 👥</p></div>
-    </div>
+    <main>
+      <div id="About-Us" class="about-us">
+          <div class="label-click columns content has-text-centered">
+            <div class="column is-full"><h1>ABOUT THE TEAM 👥</h1></div>
+          </div>
+          <div class="label-click columns content has-text-centered">
+            <div class="column is-full"><p>Team 5 has made this webpage as an API interract; helping users determine what meal to eat based on their current mood! Why not let an app handle the stressful chore of meal decision? How convenient!</p></div>
+          </div>
+        </div>
+      </main>
 
-    <div class=" columns content has-text-centered">
-        <div class="column is-full label-sub"><p>Team 5 has made this webpage as an API interract, helping users determine what meal to eat based on their current mood</p></div>
-    </div>
-
-
-      <footer class="footer">
-      <div class="content has-text-centered">
-        <b>EAT YOUR FEELINGS</b><br>
-        <p>Copyright © Team 5 @ MSU Coding Bootcamp 2022</p>
-
+  <footer class="footer">
+    <div class="content has-text-centered">
+          <b>EAT YOUR FEELINGS</b><br>
+          <p>Copyright © Team 5 @ MSU Coding Bootcamp 2022</p>
       </div>
   
-  <div class="columns">
-    <div class="column">
-  
-      <h4 class="bd-footer-title 
-                 has-text-weight-medium
-                 has-text-center">
-        Eat Your Feelings
-      </h4>
-  
-      <p class="bd-footer-link 
-                has-text-center">
-        Website API interaction that allows you to generate a food based on your mood.
-      </p><br />
-      <a href="https://github.com/Bhall96/eatYourFealings">
-        <span class="bd-footer-link 
-        has-text-center">
-          <span>Github Repository ⛓️🖥️</span>
-        </span>
-      </a>
-  
-    </div>
-  
-    <div class="column">
-      <h4 class="bd-footer-title
-                 has-text-weight-medium
-                 has-text-justify">
-        Contact us
-      </h4>
-  
-      <p class="bd-footer-link">
-          <a href="https://github.com/m-ccool">
-              <span class="icon-text">
-                <span>B McCool 👾</span>
-              </span>
-            </a>
-          <br />
-          <a href="https://github.com/Bhall96">
-              <span class="icon-text">
-                <span>Bradley Hall 👻</span>
-              </span>
-            </a>
-          <br />
-          <a href="https://github.com/Bootsbigenough">
-              <span class="icon-text">
-                <span>Brendan Haggerty 👽</span>
-              </span>
-            </a>
-            <br />
-            <!-- todo / add mark's git profile link-->
-          <a href="https://">
-              <span class="icon-text">
-                <span>Mark Beaner 😇</span>
-              </span>
-            </a>
+      <div class="columns">
+        <div class="column">
+      
+          <h4 class="bd-footer-title 
+                    has-text-weight-medium
+                    has-text-center">
+            Eat Your Feelings
+          </h4>
+      
+          <p class="bd-footer-link 
+                    has-text-center">
+            Website API interaction that generates a meal recipe based on user's mood.
+          </p><br />
+          <a href="https://github.com/Bhall96/eatYourFealings">
+            <span class="bd-footer-link 
+            has-text-center">
+              <span>Github Repository ⛓️🖥️</span>
+            </span>
+          </a>
+      
+        </div>
+      
+        <div class="column">
+          <h4 class="bd-footer-title
+                    has-text-weight-medium
+                    has-text-justify">
+            Contact us
+          </h4>
+      
+          <p class="bd-footer-link" id="Contact-Us">
+              <a href="https://github.com/m-ccool">
+                  <span class="icon-text">
+                    <span>B McCool 👾</span>
+                  </span>
+                </a>
               <br />
-          <a href="https://github.com/shannie14">
-              <span class="icon-text">
-                <span>Shannon Kendall 🧚</span>
-              </span>
-            </a>
-      </p>
-  
+              <a href="https://github.com/Bhall96">
+                  <span class="icon-text">
+                    <span>Bradley Hall 👻</span>
+                  </span>
+                </a>
+              <br />
+              <a href="https://github.com/Bootsbigenough">
+                  <span class="icon-text">
+                    <span>Brendan Haggerty 👽</span>
+                  </span>
+                </a>
+                <br />
+                <!-- todo / add mark's git profile link-->
+              <a href="https://">
+                  <span class="icon-text">
+                    <span>Mark Beaner 😇</span>
+                  </span>
+                </a>
+                  <br />
+              <a href="https://github.com/shannie14">
+                  <span class="icon-text">
+                    <span>Shannon Kendall 🧚</span>
+                  </span>
+               </a>
+            </p>
+       </div>
     </div>
-  </div>
 </footer>
 
     <script src="./assets/js/homepage.js"></script>
