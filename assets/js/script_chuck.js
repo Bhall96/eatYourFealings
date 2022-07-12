@@ -1,6 +1,9 @@
 //find the object with the name element and store it. 
 var generate = document.getElementById('generate');
 var joke = document.getElementById('joke');
+var mealEl = document.getElementById('meal');
+var resultHeading = document.getElementById('result-heading');
+
 
 function getAPI() {
   var requestUrl = 'https://api.chucknorris.io/jokes/random';
@@ -15,15 +18,7 @@ function getAPI() {
 
 }
 
-//attaching eventlistener to the element, so when it's clicked on it will call the function, which is 
-generate.addEventListener("click", getAPI);
-
-
-
-
-var mealEl = document.getElementById('meal')
-var resultHeading = document.getElementById('result-heading')
-
+//Function that pulls the search parameters
 function getParams() {
   var serchParamArr = document.location.search.split('=');
 
@@ -32,6 +27,7 @@ function getParams() {
   getMeal(mealID);
 }
 
+//fucntion that calls themeal api
 function getMeal(mealID) {
   fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + mealID)
     .then(function (response) {
@@ -44,6 +40,7 @@ function getMeal(mealID) {
     });
 }
 
+//funtion to insert data into html
 function showMeal(meal) {
   const ingredients = [];
 
@@ -79,6 +76,11 @@ function showMeal(meal) {
       </div>
   `;
 }
+
+
+//attaching eventlistener to the element, so when it's clicked on it will call the function, which is 
+generate.addEventListener("click", getAPI);
+
 
 getParams();
 
