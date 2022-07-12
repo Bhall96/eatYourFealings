@@ -11,13 +11,13 @@
     max-height: none;
 }
 
-
 .navbar-item{
     font-size: .75em;
     letter-spacing: .05rem;
     font-weight: bolder;
     font-family: 'Permanent Marker', cursive;
 }
+
 .navbar-logo{
     align-content: center;
     min-width: 10px;
