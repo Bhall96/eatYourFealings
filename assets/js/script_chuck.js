@@ -58,18 +58,24 @@ function showMeal(meal) {
   mealEl.innerHTML = `
       <div class="meal">
           <h1>${meal.strMeal}</h1>
-          <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
           <div class="meal-info">
-              ${meal.strCategory ? `<p>${meal.strCategory}</p>` : ''}
-              ${meal.strArea ? `<p>${meal.strArea}</p>` : ''}
+          ${meal.strCategory ? `<p>${meal.strCategory}</p>` : ''}
+          ${meal.strArea ? `<p>${meal.strArea}</p>` : ''}
           </div>
+
           <div class="main">
-              <p>${meal.strInstructions}</p>
-              <h2>Ingredients</h2>
-              <ul>
-                ${ingredients.map(ing => `<li>${ing}</li>`).join('')}
-              </ul>
+            <div class="column">
+              <img src="${meal.strMealThumb}" alt="${meal.strMeal}" id="image" /></div>
+            <div class="column">
+          <h3>Ingredients</h3>
+          <ul>
+            ${ingredients.map(ing => `<li>${ing}</li>`).join('')}
+          </ul></div>
           </div>
+
+        <div class="recipe">
+              <p>${meal.strInstructions}</p>
+</div>
       </div>
   `;
 }
