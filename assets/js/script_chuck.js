@@ -3,20 +3,20 @@ var generate = document.getElementById('generate');
 var joke = document.getElementById('joke');
 
 function getAPI() {
-  var requestUrl ='https://api.chucknorris.io/jokes/random';
- 
+  var requestUrl = 'https://api.chucknorris.io/jokes/random';
+
   fetch(requestUrl)
-    .then(function(response) {
-      return response.json(); 
-    }) 
-    .then(function(data) {
-      joke.textContent= (JSON.stringify(data.value))
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      joke.textContent = (JSON.stringify(data.value))
     });
- 
+
 }
 
 //attaching eventlistener to the element, so when it's clicked on it will call the function, which is 
-generate.addEventListener("click",getAPI);
+generate.addEventListener("click", getAPI);
 
 
 
@@ -34,10 +34,10 @@ function getParams() {
 
 function getMeal(mealID) {
   fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + mealID)
-    .then(function(response) {
+    .then(function (response) {
       return response.json();
     })
-    .then(function(data) {
+    .then(function (data) {
       const meal = data.meals[0];
 
       showMeal(meal);
@@ -48,11 +48,11 @@ function showMeal(meal) {
   const ingredients = [];
 
   for (let i = 1; i <= 20; i++) {
-      if (meal[`strIngredient${i}`]) {
-          ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`);
-      } else {
-          break;
-      }
+    if (meal[`strIngredient${i}`]) {
+      ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`);
+    } else {
+      break;
+    }
   }
 
   mealEl.innerHTML = `
@@ -75,11 +75,10 @@ function showMeal(meal) {
 
         <div class="recipe">
               <p>${meal.strInstructions}</p>
-</div>
+        </div>
       </div>
   `;
 }
 
 getParams();
 
- 
