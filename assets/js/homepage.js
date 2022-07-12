@@ -17,14 +17,14 @@ function whenClicked(event) {
     
     //conditional state for what emotion is clicked 
     if(id === 'happy') {
-        var happy = [52768, 52893, 53049];
+        var happy = [52768, 52893, 53049, 53013, 52776, 52915, 52780, 52057, 52862, 53014, 52908, 52770];
       
         index = Math.floor(Math.random() * happy.length);
       
         var queryString = './index2.html?q=' + happy[index];
       
     } else if(id === 'sad') {
-        var sad = [52761, 52891, 53041];
+        var sad = [52761, 52891, 53041, 52791, 52787, 53015, 52858, 52861, 52968, 52833];
       
         index = Math.floor(Math.random() * sad.length);
       
@@ -38,21 +38,21 @@ function whenClicked(event) {
         var queryString = './index2.html?q=' + angry[index];
       
     } else if(id === 'proud') {
-        var proud = [52762, 52892, 53042];
+        var proud = [52762, 52892, 53042, 52024, 52803, 52905, 52951, 52773, 52993, 52935, 52917];
       
         index = Math.floor(Math.random() * proud.length);
       
         var queryString = './index2.html?q=' + proud[index];
       
     } else if(id === 'bored') {
-        var bored = [52764, 52894, 53044];
+        var bored = [52764, 52894, 53044, 52928, 52966, 52957, 52890, 52669, 52924, 52987, 52901];
       
         index = Math.floor(Math.random() * bored.length);
       
         var queryString = './index2.html?q=' + bored[index];
       
     } else if(id === 'hungover') {
-        var hungover = [52769];
+        var hungover = [52769, 52855, 52965, 52995, 52895, 52829, 52781, 52013, 52054];
       
         index = Math.floor(Math.random() * hungover.length);
       
