@@ -1,35 +1,142 @@
 
-navbar{
-    max-width:fit-content;
+.navbar{
+    /* max-width:fit-content; */
+} 
+
+.navbar-item img {
+    box-shadow: none;
+    height: 3rem;
+    width: 4rem;
+    align-content: center;
+    max-height: none;
 }
+
+.navbar-item{
+    font-size: .75em;
+    letter-spacing: .05rem;
+    font-weight: bolder;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navbar-logo{
+    align-content: center;
+    min-width: 10px;
+}
+
+html{
+    background-color:rgb(255,17,0);
+    min-width: 300px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+  }
 
 body{
+    padding: 0px;
+    overflow: hidden;
     justify-items: center;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-    text-align:center;
-    text-justify:center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
     background-color:rgb(255,17,0);
-    max-width: 99%;
+    width: 100vw;
+
 }
 
-main {
+main {    
+    margin: 0 10vw;
+
     display: flex;
     justify-items: center;
-    justify-content:center;
+    justify-content: center;
     align-items:center;
     align-content:center;
-    text-align:center;
+    text-align: center;
     text-justify:center;
     background-color: rgb(255, 17, 0);
     justify-content: center;
-    max-width: fit-content;
-    min-height: 100vh;
-    min-width: 100%;
+
+    /*max-width: fit-content;*/
+    /* min-height: 100vh;
+    min-width: 100vw; */
+}
+
+.btn-joke {
+    font-size: large;
+    letter-spacing: 2px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 2.5rem;
+    font-weight: bolder;
+    background-color: #ffe08a;
+    font-family: 'Permanent Marker';
+    
+}
+
+.about-us {
+    max-width: 50vw;
+}
+
+.label-click P{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin: 1rem 50px;
+    
+}
+.label-click h1{
+    font-size: 1.25rem;
+    letter-spacing: .5rem;
+    font-weight: bolder;
+    color: white;
+    margin: 1rem 50px;
+    font-family: 'Permanent Marker';
+}
+.label-click h2{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    color: white;
+    margin: 1rem 50px;
+}
+
+.recipe-card {
+    padding: 25px;
+    margin: 5vw;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.189);
+}
+
+img {
+    border-radius: 25px;
+    margin: 5px;
+    max-height: 75vh;
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.189);
+}
+
+.meal {
+    font-size: 1.25rem;
+}
+.meal, h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+}
+.main, p {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .grid {
+
+    max-width: 50vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -38,14 +145,16 @@ main {
     align-items:center;
     align-content:center;
     text-align:center;
-    text-justify:center;
     min-width: 100%;
     background-color:rgb(255, 255, 255);
     padding: 5px;
     border-radius: 10px;
-    border:solid;
+    border: none;
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.189);
     align-content: center;
-    min-height: 50vh;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    
 }
 
 .option {
@@ -76,6 +185,9 @@ main {
     border-width: 3px;
 }
 
+.footer{
+    margin-top: 5rem;
+    background-color: #ffe08a;
+    width: 100vw;
 
-  
-
+}

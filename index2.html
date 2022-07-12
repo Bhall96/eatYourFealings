@@ -5,41 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eat_Your_Feelings</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="Javascript" href="./assets/js/homepage.js">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <header>
 
-        <div class= "navbar-brand">
-            <a class ="navbar-item" href="">
-                <img src="assets\Images\header image_face eating.png"/>
-            </a>
-            <h1>
-                <strong>Eat Your Feelings</strong>
-            </h1>
-          <img> 
-
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+    <nav class="navbar is-warning mx-5 my-5">
+        <h1 class="is-size-3 has-text-centered py-4 my-2 x-4">
+            <div class="navbar-brand" id="logo-box">
+                <a class="navbar-item">
+                    <figure class="image is-64x64 navbar-logo">
+                    <img  src="assets\Images\header image_face eating.png" alt="Guy eating Burger Image"/>
+                    </figure>
+                    EAT YOUR FEELINGS
+                </a>
+                    </a>
+                <a class="navbar-burger burger-spacing " id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </h1>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-size-5">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="#About-Us">About Us</a>
+                <a class="navbar-item" href="#Contact-Us">Contact</a>
+            </div>
         </div>
-      
-        <div class="navbar-start">
+    </nav>
 
-        </div> 
-    </navbar>
+</header>
 <main>
     <div>
-        <button id="generate">Generate Joke</button>
+        <button class="button btn-joke" id="generate">GENERATE JOKE</button>
         <p id="joke"></p>
     </div>
 </main>
 
-  <script src="./assets/js/script_chuck.js"></script>
 
+
+<div class="recipe-card">
+
+    <div id="result-heading"></div>
+    
+    <div id="meal" class="meal"></div>
+      <script src="./assets/js/script_chuck.js"></script>
+
+</div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <b>EAT YOUR FEELINGS</b><br>
+      <p>Copyright © Team 5 @ MSU Coding Bootcamp 2022</p>
+    </div>
+
+<div class="columns">
+  <div class="column">
+
+    <h4 class="bd-footer-title 
+               has-text-weight-medium
+               has-text-center">
+      Eat Your Feelings
+    </h4>
+
+    <p class="bd-footer-link 
+              has-text-center">
+              Website API interaction that generates a meal recipe based on user's mood.
+    </p><br />
+    <a href="https://github.com/Bhall96/eatYourFealings">
+      <span class="bd-footer-link 
+      has-text-center">
+        <span>Github Repository ⛓️🖥️</span>
+      </span>
+    </a>
+
+  </div>
+
+  <div class="column" id="Contact-Us">
+    <h4 class="bd-footer-title
+               has-text-weight-medium
+               has-text-justify">
+      Contact us
+    </h4>
+
+    <p class="bd-footer-link">
+        <a href="https://github.com/m-ccool">
+            <span class="icon-text">
+              <span>B McCool 👾</span>
+            </span>
+          </a>
+        <br />
+        <a href="https://github.com/Bhall96">
+            <span class="icon-text">
+              <span>Bradley Hall 👻</span>
+            </span>
+          </a>
+        <br />
+        <a href="https://github.com/Bootsbigenough">
+            <span class="icon-text">
+              <span>Brendan Haggerty 👽</span>
+            </span>
+          </a>
+          <br />
+          <!-- todo / add mark's git profile link-->
+        <a href="https://">
+            <span class="icon-text">
+              <span>Mark Beaner 😇</span>
+            </span>
+          </a>
+            <br />
+        <a href="https://github.com/shannie14">
+            <span class="icon-text">
+              <span>Shannon Kendall 🧚</span>
+            </span>
+          </a>
+    </p>
+
+  </div>
+</div>
+</footer>
 </body>
 </html>
