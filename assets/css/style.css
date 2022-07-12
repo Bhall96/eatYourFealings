@@ -113,6 +113,9 @@ main {
     border-radius: 50px;
     box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.189);
 }
+.recipe {
+    padding: 50px;
+}
 
 img {
     border-radius: 25px;
@@ -132,6 +135,9 @@ img {
 .main, p {
     font-size: 1rem;
     font-weight: 500;
+}
+h3 {
+    font-weight:900;
 }
 
 .grid {
@@ -191,3 +197,32 @@ img {
     width: 100vw;
 
 }
+
+#image {
+    max-height: 300px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #joke {
+    font-size: medium;
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
