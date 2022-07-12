@@ -11,9 +11,6 @@
     max-height: none;
 }
 
-.custom-title p {
-    font-family: 'Permanent Marker', cursive;
-}
 
 .navbar-item{
     font-size: .75em;
@@ -31,6 +28,7 @@ html{
     min-width: 300px;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -81,18 +79,31 @@ main {
     
 }
 
-.label-click {
-    font-size: x-large;
-    font-weight: bold;
-    color: white;
-    margin: 3rem 5rem;
+.about-us {
+    max-width: 50vw;
 }
 
-.label-sub {
-    font-size: medium;
-    font-weight: light;
+.label-click P{
+    font-size: 1rem;
+    font-weight: 600;
     color: white;
-    margin: 3rem 5rem;
+    margin: 1rem 50px;
+    
+}
+.label-click h1{
+    font-size: 1.25rem;
+    letter-spacing: .5rem;
+    font-weight: bolder;
+    color: white;
+    margin: 1rem 50px;
+    font-family: 'Permanent Marker';
+}
+.label-click h2{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    color: white;
+    margin: 1rem 50px;
 }
 
 .recipe-card {
@@ -141,6 +152,8 @@ img {
     border: none;
     box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.189);
     align-content: center;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
     
 }
 
