@@ -10,7 +10,7 @@ const navbarMenu = document.querySelector('#nav-links');
 
 //Funtion that runs when an emotion is click
 function whenClicked(event) {
-    event.preventDefault();
+    // event.preventDefault();
    
     //assigning an event target to a variable
     var id = event.target.id
@@ -29,13 +29,6 @@ function whenClicked(event) {
         index = Math.floor(Math.random() * sad.length);
       
         var queryString = './index2.html?q=' + sad[index];
-      
-    } else if(id === 'angry') {
-        var angry = [1, 2, 3, 4, 5];
-      
-        index = Math.floor(Math.random() * angry.length);
-      
-        var queryString = './index2.html?q=' + angry[index];
       
     } else if(id === 'proud') {
         var proud = [52762, 52892, 53042, 52024, 52803, 52905, 52951, 52773, 52993, 52935, 52917];
