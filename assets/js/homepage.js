@@ -10,8 +10,7 @@ const navbarMenu = document.querySelector('#nav-links');
 
 //Funtion that runs when an emotion is click
 function whenClicked(event) {
-    // event.preventDefault();
-   
+    
     //assigning an event target to a variable
     var id = event.target.id
     
