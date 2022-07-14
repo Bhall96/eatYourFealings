@@ -50,6 +50,10 @@ function whenClicked(event) {
       
         var queryString = './index2.html?q=' + hungover[index];
 
+    } else if(id === 'angry') {
+       var queryString=("https://www.snickers.com/");
+       
+       
     } else {
         return;
     };
