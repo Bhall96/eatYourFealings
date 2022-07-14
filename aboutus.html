@@ -6,20 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eat_Your_Feelings</title>
-    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/style2.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+
     <header>
 
-        <nav class="navbar is-rounded mx-10 my-10 is-warning">
+        <nav class="navbar is-rounded mx-10 my-10 is-warning ">
             <h1 class="is-size-3 has-text-centered py-4 my-2 x-4">
                 <div class="navbar-brand" id="logo-box">
                     <a class="navbar-item">
-                        <figure class="image is-64x64 navbar-logo">
+                        <figure class="image is-64x64">
                             <img src="assets\Images\header image_face eating.png" alt="Guy eating Burger Image" />
                         </figure>
                         EAT YOUR FEELINGS
@@ -42,26 +46,33 @@
         </nav>
 
     </header>
+    <div class="label-click columns content has-text-centered">
+        <div class="column is-full">
+            <h2>We're all snacks!</h3>
+        </div>
+    </div>
+
     <main>
-        <div>
-            <button class="button btn-joke" id="generate">GENERATE JOKE</button>
-            <p id="joke"></p>
+        <img src="./assets/Images/team pic.png">
+    </main>
+
+    <main>
+        <div id="About-Us" class="about-us">
+            <div class="label-click columns content has-text-centered">
+                <div class="column is-full">
+                    <h1>ABOUT THE TEAM 👥</h1>
+                </div>
+            </div>
+            <div class="label-click columns content has-text-centered">
+                <div class="column is-full">
+                    <p>This app helps users determine what meal to eat based
+                        on their current mood! Why not let an app handle the stressful chore of meal decision? How
+                        convenient!</p>
+                </div>
+            </div>
         </div>
     </main>
 
-
-
-    <div class="recipe-card">
-
-        <div id="result-heading"></div>
-
-        <div id="meal" class="meal"></div>
-
-        <script src="./assets/js/script_chuck.js"></script>
-        <script src=".assets/js/homepage.js">
-
-        </script>
-    </div>
     <footer class="footer">
         <div class="content has-text-centered">
             <b>EAT YOUR FEELINGS</b><br>
@@ -72,28 +83,28 @@
             <div class="column">
 
                 <h4 class="bd-footer-title 
-               has-text-weight-medium
-               has-text-center">
+                    has-text-weight-medium
+                    has-text-center">
                     Eat Your Feelings
                 </h4>
 
                 <p class="bd-footer-link 
-              has-text-center">
+                    has-text-center">
                     Website API interaction that generates a meal recipe based on user's mood.
                 </p><br />
                 <a href="https://github.com/Bhall96/eatYourFealings">
                     <span class="bd-footer-link 
-      has-text-center">
+            has-text-center">
                         <span>Github Repository ⛓️🖥️</span>
                     </span>
                 </a>
 
             </div>
 
-            <div class="column" id="Contact-Us">
+            <div class="column">
                 <h4 class="bd-footer-title
-               has-text-weight-medium
-               has-text-justify">
+                    has-text-weight-medium
+                    has-text-justify">
                     Contact us
                 </h4>
 
@@ -129,11 +140,12 @@
                         </span>
                     </a>
                 </p>
-
             </div>
         </div>
-        <script src="./assets/js/homepage.js"></script>
     </footer>
+
+    <script src="./assets/js/homepage.js"></script>
+
 </body>
 
 </html>
